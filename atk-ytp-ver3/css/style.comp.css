@@ -158,12 +158,15 @@ h1, h2, h3 {
     letter-spacing: 0.5rem;
     padding-left: 0.5rem;
     line-height: initial;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding-top: 4rem; }
     .heading__h2__sos {
       margin-bottom: 0;
       font-family: 'Titillium Web', sans-serif;
-      color: #7e358f; }
+      color: #d83177; }
+      @media only screen and (max-width: 56.25em) {
+        .heading__h2__sos {
+          line-height: 6rem; } }
   .heading__h3 {
     font-size: 3rem;
     line-height: initial;
@@ -194,7 +197,7 @@ h1, h2, h3 {
   line-height: 3.6rem; }
   @media only screen and (max-width: 56.25em) {
     .paragraph {
-      max-width: 90vw; } }
+      max-width: 85vw; } }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
   .paragraph__centered {
@@ -210,9 +213,11 @@ h1, h2, h3 {
     font-weight: 700;
     max-width: 60rem;
     width: 60rem;
-    max-width: 80vw; }
+    max-width: 80vw;
+    line-height: 4.7rem; }
     .paragraph__strong__sos {
-      margin-top: 0; }
+      margin-top: 1rem;
+      font-size: 5rem !important; }
   .paragraph__link {
     text-decoration: none;
     color: #7e358f;
@@ -230,11 +235,13 @@ h1, h2, h3 {
     color: #f7f7f7; }
 
 .list {
+  line-height: 3.6rem;
   font-size: 2.6rem;
   margin: 0 auto 2rem auto;
   margin-bottom: 2rem;
-  width: 75rem;
   max-width: 75vw; }
+  .list li:not(:last-child) {
+    margin-bottom: 1rem; }
   .list__light {
     color: #f7f7f7; }
   .list__dark {
@@ -312,13 +319,13 @@ h1, h2, h3 {
 
 .button {
   background-color: #7e358f;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 3px;
   transition: all .2s;
   box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.3);
   text-align: center;
   max-width: 30%;
-  min-height: 14rem;
+  min-height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,25 +395,23 @@ h1, h2, h3 {
       background-color: #145045;
       transform: scale(1) skew(0) rotate(0); }
   .button__yellow {
-    background-color: #ec8947;
+    background-color: #f57f30;
     transform: scale(1) skew(0) rotate(0); }
     .button__yellow:hover {
-      background-color: #ca5c26;
+      background-color: #db6a1f;
       transform: scale(1.1) skew(-7deg) rotate(5deg); }
   .button__red {
     background-color: #d83177;
-    transform: scale(1) skew(0) rotate(0); }
+    transform: scale(1) skew(0) rotate(0);
+    font-size: 5rem !important; }
     .button__red:hover {
       background-color: #922150;
       transform: scale(1.3) skew(-24deg) rotate(7.1deg); }
   .button__single {
     margin-top: 2rem;
     margin-right: 0 !important;
-    margin-bottom: 6rem;
-    background-color: #ec8947;
+    margin-bottom: 4rem !important;
     max-width: 80vw; }
-    .button__single:hover {
-      background-color: #ca5c26; }
     .button__single__sos {
       width: 50rem;
       font-size: 3rem;
@@ -711,6 +716,9 @@ header {
           .landing__nav__container__link__item__p:hover {
             color: #222; }
 
+#nav__js {
+  transition: all .4s; }
+
 .navigation__checkbox {
   display: none; }
 
@@ -894,6 +902,12 @@ header {
   .ohjelma li {
     list-style: none; }
 
+.section__dark {
+  background-color: #222; }
+
+.section__light {
+  background-color: #f7f7f7; }
+
 .page-container {
   padding: 5rem 4rem 7rem 4rem;
   display: flex;
@@ -914,67 +928,88 @@ header {
       padding: 6rem 2rem 10rem 2rem; } }
 
 #sos__header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sos_bg.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sos_bg.jpg");
+  min-height: 90vh; }
 
-.intro {
-  background-color: #f7f7f7; }
+.sos__yellow, .sos__red {
+  display: none; }
+
+.list__icons li:last-child a.button.button__small {
+  padding: 1.5rem 3rem 2rem 3rem; }
+
+.sos__nav {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .sos__nav {
+      flex-direction: column; } }
+
+.sos__button {
+  color: #f7f7f7;
+  text-align: center;
+  padding: 2rem 0;
+  text-decoration: none;
+  width: 22%;
+  margin: 1rem;
+  font-size: 2.4rem;
+  transition: all .3s; }
+  @media only screen and (max-width: 75em) {
+    .sos__button {
+      width: 40%;
+      font-size: 3.4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .sos__button {
+      width: 50rem;
+      max-width: 80vw; } }
+
+.sos__green .button__small {
+  background-color: #458579; }
+  .sos__green .button__small:hover {
+    background-color: #145045; }
+
+.sos__green .list__icons li:last-child a.button.button__small {
+  background-color: #2275ac; }
+  .sos__green .list__icons li:last-child a.button.button__small:hover {
+    background-color: #1a5983; }
+
+.sos__yellow .button__small {
+  background-color: #f57f30; }
+  .sos__yellow .button__small:hover {
+    background-color: #db6a1f; }
+
+.sos__yellow .list__icons li:last-child a.button.button__small {
+  background-color: #2275ac; }
+  .sos__yellow .list__icons li:last-child a.button.button__small:hover {
+    background-color: #1a5983; }
 
 body#sos {
   background-color: #f7f7f7; }
+  body#sos #sos__landing-container > *:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 4rem; }
   body#sos .heading__h1 {
     line-height: 14rem; }
-  @media only screen and (max-width: 75em) {
-    body#sos #sos__actions .landing-container {
-      padding: 0;
-      margin: 3rem 4rem; } }
-  @media only screen and (max-width: 75em) {
-    body#sos #sos__actions .landing-container {
-      margin: 3rem 1rem; } }
-  body#sos #sos__actions .landing-container__nav {
-    margin: 6rem 4rem; }
     @media only screen and (max-width: 37.5em) {
-      body#sos #sos__actions .landing-container__nav {
-        margin: 3rem 1rem; } }
-    body#sos #sos__actions .landing-container__nav .button {
-      max-width: 28rem; }
-      body#sos #sos__actions .landing-container__nav .button:not(:last-child) {
-        margin-right: 1%; }
-      @media only screen and (max-width: 37.5em) {
-        body#sos #sos__actions .landing-container__nav .button {
-          max-width: 60vw;
-          min-height: 13rem; } }
-
-#sos__majoitus,
-#sos__viinaa {
-  background-color: #222; }
-
-#sos__ruokaa, #sos__hata {
-  background-color: #f7f7f7; }
+      body#sos .heading__h1 {
+        line-height: 11rem; } }
 
 @media only screen and (max-width: 56.25em) {
   ul#taxi-list {
     width: initial;
     max-width: 98vw; } }
 
-#bussibutton {
-  margin-bottom: 2rem; }
-
 #sos__footer {
   padding-top: 10rem; }
 
-.list__icons li:last-child a.button.button__small {
-  background-color: #ec8947;
-  padding: 1.3rem 3rem 1.8rem 3rem; }
-
-#assari_link {
-  background-color: #7e358f;
-  padding: 0 3rem 0.5rem 3rem; }
-
-#aukioloajat_heading {
+.aukioloajat_heading {
   width: 85rem;
   max-width: 85vw; }
 
-#sos__aukiolot {
+.sos__aukiolot {
   width: initial;
   margin: 0 auto 4rem auto; }
 

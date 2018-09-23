@@ -52,4 +52,34 @@ $('a[href*="#"]')
   
 });
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("sos-js").style.top = "4rem";
+  } else {
+    document.getElementById("sos-js").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+$("#status-green").click(function(){
+  $(".sos__green").css("display", "block");
+  $(".sos__yellow").css("display", "none");
+  $(".sos__red").css("display", "none");
+});
+
+$("#status-yellow").click(function(){
+  $(".sos__green").css("display", "none");
+  $(".sos__yellow").css("display", "block");
+  $(".sos__red").css("display", "none");
+});
+
+$("#status-red").click(function(){
+  $(".sos__green").css("display", "none");
+  $(".sos__yellow").css("display", "none");
+  $(".sos__red").css("display", "block");
+});
+
 });
