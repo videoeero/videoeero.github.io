@@ -161,7 +161,7 @@ h1, h2, h3 {
     margin-bottom: 4rem;
     padding-top: 4rem; }
     .heading__h2__sos {
-      margin-bottom: 0;
+      margin-bottom: 3rem;
       font-family: 'Titillium Web', sans-serif;
       color: #d83177; }
       @media only screen and (max-width: 56.25em) {
@@ -206,7 +206,6 @@ h1, h2, h3 {
   .paragraph__medium {
     margin-top: 2rem;
     font-weight: 700;
-    width: 70rem;
     max-width: 80vw; }
   .paragraph__strong {
     font-size: 3.4rem;
@@ -214,10 +213,10 @@ h1, h2, h3 {
     max-width: 60rem;
     width: 60rem;
     max-width: 80vw;
-    line-height: 4.7rem; }
+    line-height: 5.5rem; }
     .paragraph__strong__sos {
       margin-top: 1rem;
-      font-size: 5rem !important; }
+      font-size: 4rem !important; }
   .paragraph__link {
     text-decoration: none;
     color: #7e358f;
@@ -258,6 +257,10 @@ h1, h2, h3 {
         margin-bottom: 2rem; }
       .list__icons__item p {
         margin-left: 10px; }
+
+.arrowright {
+  width: 3rem;
+  height: auto; }
 
 .icon {
   transition: all .3s;
@@ -318,6 +321,7 @@ h1, h2, h3 {
     left: -100%; } }
 
 .button {
+  line-height: 4.5rem;
   background-color: #7e358f;
   padding: 1rem 1rem;
   border-radius: 3px;
@@ -337,11 +341,10 @@ h1, h2, h3 {
   .button__sos {
     font-size: 3rem; }
   .button__small {
-    display: inline-block;
-    min-height: 4rem;
+    min-height: 3rem !important;
     max-width: initial;
     text-align: center;
-    padding: 0 3rem 0.5rem 3rem;
+    padding: 1.5rem 2.5rem;
     margin: 1rem;
     flex: 0;
     font-size: 3rem; }
@@ -350,18 +353,12 @@ h1, h2, h3 {
     @media only screen and (max-width: 37.5em) {
       .button__small {
         width: 8rem !important; } }
-  .button__XL {
-    padding: 1rem 1.5rem;
-    max-width: 40rem;
-    width: 80%;
-    font-size: 3.4rem; }
-    .button__XL:not(:last-child) {
-      margin-right: 1%; }
   @media only screen and (max-width: 37.5em) {
     .button {
       width: 100%;
-      max-width: initial;
-      font-size: 3rem; } }
+      max-width: 55rem;
+      font-size: 3rem;
+      min-height: 9rem; } }
   .button:not(:last-child) {
     margin-right: 3%; }
     @media only screen and (max-width: 75em) {
@@ -369,10 +366,10 @@ h1, h2, h3 {
         margin-right: 2%; } }
     @media only screen and (max-width: 37.5em) {
       .button:not(:last-child) {
-        margin-right: 0rem;
+        margin-right: 0;
         margin-bottom: 1.5rem; } }
   .button:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
     box-shadow: 2px 4px 0.5rem rgba(0, 0, 0, 0.3); }
     .button:hover .button__text__1 {
       opacity: 0; }
@@ -382,12 +379,26 @@ h1, h2, h3 {
     transform: scale(1.02);
     box-shadow: 1px 3px 0.5rem rgba(0, 0, 0, 0.3); }
   .button__text {
+    width: 100%;
     position: absolute;
-    transition: all .4s; }
+    transition: all .4s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .button__text__1 {
       opacity: 1; }
     .button__text__2 {
       opacity: 0; }
+  .button__XL {
+    padding: 1rem 0.5rem;
+    max-width: 40rem;
+    width: 80%;
+    font-size: 3.4rem; }
+    .button__XL:not(:last-child) {
+      margin-right: 1%; }
+      @media only screen and (max-width: 37.5em) {
+        .button__XL:not(:last-child) {
+          margin-right: 1%; } }
   .button__green {
     background-color: #458579;
     transform: scale(1) skew(0) rotate(0); }
@@ -403,7 +414,7 @@ h1, h2, h3 {
   .button__red {
     background-color: #d83177;
     transform: scale(1) skew(0) rotate(0);
-    font-size: 5rem !important; }
+    font-size: 4rem !important; }
     .button__red:hover {
       background-color: #922150;
       transform: scale(1.3) skew(-24deg) rotate(7.1deg); }
@@ -411,7 +422,14 @@ h1, h2, h3 {
     margin-top: 2rem;
     margin-right: 0 !important;
     margin-bottom: 4rem !important;
+    width: 60rem;
     max-width: 80vw; }
+    .button__single:hover {
+      box-shadow: 2px 4px 0.5rem rgba(0, 0, 0, 0.3);
+      transform: scale(1.03); }
+    .button__single:active {
+      box-shadow: 1px 3px 0.5rem rgba(0, 0, 0, 0.3);
+      transform: scale(1.02); }
     .button__single__sos {
       width: 50rem;
       font-size: 3rem;
@@ -518,6 +536,8 @@ h1, h2, h3 {
       @media only screen and (max-width: 56.25em) {
         .footer__logo__asteriski {
           width: 120px; } }
+  .footer__dark {
+    padding-top: 10rem; }
 
 .contact {
   margin: 2rem 0 12rem 0;
@@ -541,7 +561,7 @@ h1, h2, h3 {
     .contact__name:active {
       transform: scale(1.02); }
 
-header {
+.header {
   position: relative;
   min-height: 85vh;
   display: flex;
@@ -927,6 +947,38 @@ header {
     .clippath__s .page-container {
       padding: 6rem 2rem 10rem 2rem; } }
 
+#info .header {
+  display: block;
+  padding-bottom: 5rem; }
+  #info .header__image {
+    padding-top: 14rem;
+    padding-bottom: 3rem;
+    width: 100vw;
+    background-position: 50% 40%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/landing_bg_1.jpg"); }
+
+#info .heading__h1 {
+  margin: 0 auto;
+  padding: 0; }
+
+#info .page-container {
+  padding-top: 4rem; }
+
+#info .section__light .page-container {
+  padding: 3rem; }
+
+#info #info__rastikierrokset {
+  padding-top: 5rem; }
+
+#info #info__kuvabanneri {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/landing_bg_1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-top: -100px;
+  margin-bottom: -100px; }
+
 #sos__header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sos_bg.jpg");
   min-height: 90vh; }
@@ -935,7 +987,10 @@ header {
   display: none; }
 
 .list__icons li:last-child a.button.button__small {
-  padding: 1.5rem 3rem 2rem 3rem; }
+  padding: 3rem 2.5rem;
+  background-color: #2275ac; }
+  .list__icons li:last-child a.button.button__small:hover {
+    background-color: #1a5983; }
 
 .sos__nav {
   width: 90vw;
@@ -956,7 +1011,15 @@ header {
   width: 22%;
   margin: 1rem;
   font-size: 2.4rem;
-  transition: all .3s; }
+  transition: all .3s;
+  border-radius: 3px;
+  box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.3); }
+  .sos__button:hover {
+    box-shadow: 2px 4px 0.5rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.03); }
+  .sos__button:active {
+    box-shadow: 1px 3px 0.5rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.02); }
   @media only screen and (max-width: 75em) {
     .sos__button {
       width: 40%;
@@ -971,11 +1034,6 @@ header {
   .sos__green .button__small:hover {
     background-color: #145045; }
 
-.sos__green .list__icons li:last-child a.button.button__small {
-  background-color: #2275ac; }
-  .sos__green .list__icons li:last-child a.button.button__small:hover {
-    background-color: #1a5983; }
-
 .sos__yellow .button__small {
   background-color: #f57f30; }
   .sos__yellow .button__small:hover {
@@ -986,24 +1044,21 @@ header {
   .sos__yellow .list__icons li:last-child a.button.button__small:hover {
     background-color: #1a5983; }
 
-body#sos {
+body#sos, body#info {
   background-color: #f7f7f7; }
-  body#sos #sos__landing-container > *:not(:last-child) {
+  body#sos #sos__landing-container > *:not(:last-child), body#info #sos__landing-container > *:not(:last-child) {
     margin-top: 0;
     margin-bottom: 4rem; }
-  body#sos .heading__h1 {
+  body#sos .heading__h1, body#info .heading__h1 {
     line-height: 14rem; }
     @media only screen and (max-width: 37.5em) {
-      body#sos .heading__h1 {
-        line-height: 11rem; } }
+      body#sos .heading__h1, body#info .heading__h1 {
+        line-height: 13rem; } }
 
 @media only screen and (max-width: 56.25em) {
   ul#taxi-list {
     width: initial;
     max-width: 98vw; } }
-
-#sos__footer {
-  padding-top: 10rem; }
 
 .aukioloajat_heading {
   width: 85rem;
@@ -1012,13 +1067,6 @@ body#sos {
 .sos__aukiolot {
   width: initial;
   margin: 0 auto 4rem auto; }
-
-.button__XL {
-  max-width: 40rem;
-  width: 80%;
-  font-size: 3.4rem; }
-  .button__XL:not(:last-child) {
-    margin-right: 1%; }
 
 .hide {
   display: none; }
