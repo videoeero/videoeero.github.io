@@ -1,20 +1,12 @@
 $( document ).ready(function() {
- 
   $( '.navigation__list' ).hide();
   $(".navigation__button").click(function () {
-
     if($('#nav__list:visible').length == 0 && $("#navi-toggle").prop('checked') == false) 
       {
         $(".navigation__list").fadeIn().css("display","flex");
       }
     });
 
-
-    //$( '.navigation__list' ).fadeToggle( "fast", "linear" );
-    
-//});
-
-// From great Udemy course by Jonas Schmedtmann: http://codingheroes.io/
 
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -49,30 +41,25 @@ $('a[href*="#"]')
     }
   }
   $( "#navi-toggle" ).prop( "checked", false );
-  
 });
 
 
 var phoneWidth = window.matchMedia( "(max-width: 37.5em)" );
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    
     if (phoneWidth.matches) {
       document.getElementById("sos-js").style.top = "3rem";
     }
     else {
       document.getElementById("sos-js").style.top = "4rem";
     }
-
   } else {
     document.getElementById("sos-js").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
 }
-
 
 $("#status-green").click(function(){
   $(".sos__green").css("display", "block");
@@ -92,4 +79,7 @@ $("#status-red").click(function(){
   $(".sos__red").css("display", "block");
 });
 
+
+
 });
+
