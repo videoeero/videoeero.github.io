@@ -8,8 +8,8 @@ document.getElementById("nav").innerHTML= `
 
 <div class="navigation__background">&nbsp;</div>
 
-<nav class="navigation__nav flex-row">
-    <ul class="navigation__list flex-column" id="nav__list">
+<nav class="navigation__nav">
+    <ul class="navigation__list" id="nav__list">
         <li class="navigation__item"><a href="index.html#landing" class="navigation__link">Etusivu</a></li>
         <li class="navigation__item"><a href="index.html#aikataulu" class="navigation__link">Aikataulu</a></li>
         <li class="navigation__item"><a href="info.html#yleisinfo" class="navigation__link">Yleisinfo</a></li>
@@ -19,7 +19,7 @@ document.getElementById("nav").innerHTML= `
         <li class="navigation__item"><a href="index.html#co-op" class="navigation__link">Yhteistyö</a></li>
     </ul>    
 </nav>
-<div class="navigation__button sos__nav__button flex-row" id="sos-js">
+<div class="navigation__button sos__nav__button" id="sos-js">
         <a href="sos.html#sos__header">SOS</a>
 </div>                
 </div>

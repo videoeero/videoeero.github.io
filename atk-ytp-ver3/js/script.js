@@ -61,18 +61,6 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-$("#sos-js").click(function () {
-  var count = $(this).data("count") || 0;
-  if(count >= 1)
-  {
-    document.getElementById("sos-js").innerHTML= `
-    <a href="https://www.lsjh.fi/fi/jatteen-vastaanotto/jatekeskukset-ja-asemat/topinojan-jatekeskus/">SOS</a>
-    `;
-  }
-
-  $(this).data("count", ++count);
-});
-
 $("#status-green").click(function(){
   $(".sos__green").css("display", "block");
   $(".sos__yellow").css("display", "none");
@@ -91,11 +79,7 @@ $("#status-red").click(function(){
   $(".sos__red").css("display", "block");
 });
 
-var hyvinvointiImages =['../img/hyvinvointi/hyvinvointi1.jpg',                                    '../img/hyvinvointi/hyvinvointi2.jpg',
-                        '../img/hyvinvointi/hyvinvointi3.jpg'
-              ];
-var randomNumber = Math.floor(Math.random() * hyvinvointiImages.length);
-var Img = hyvinvointiImages[randomNumber];
-$('#hyvinvointi-image').attr('src', Img);
+
 
 });
+
