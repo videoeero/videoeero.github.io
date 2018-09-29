@@ -91,8 +91,14 @@ $("#status-red").click(function(){
   $(".sos__red").css("display", "block");
 });
 
-var hyvinvointiImages =['../img/hyvinvointi/hyvinvointi1.jpg',                                    '../img/hyvinvointi/hyvinvointi2.jpg',
-                        '../img/hyvinvointi/hyvinvointi3.jpg'
+var hyvinvointiImages =['../img/hyvinvointi/hyvinvointi1.jpg',                                '../img/hyvinvointi/hyvinvointi2.jpg',
+                        '../img/hyvinvointi/hyvinvointi3.jpg',
+                        '../img/hyvinvointi/hyvinvointi4.jpg',        '../img/hyvinvointi/hyvinvointi5.jpg',
+                        '../img/hyvinvointi/hyvinvointi6.jpg',
+                        '../img/hyvinvointi/hyvinvointi7.jpg',        '../img/hyvinvointi/hyvinvointi8.jpg',
+                        '../img/hyvinvointi/hyvinvointi9.jpg',
+                        '../img/hyvinvointi/hyvinvointi10.jpg',        '../img/hyvinvointi/hyvinvointi11.jpg',
+                        '../img/hyvinvointi/hyvinvointi12.jpg'
               ];
 var randomNumber = Math.floor(Math.random() * hyvinvointiImages.length);
 var Img = hyvinvointiImages[randomNumber];
