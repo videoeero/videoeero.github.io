@@ -1076,6 +1076,11 @@ path, ellipse, rect {
   width: 60rem;
   max-width: 80vw; }
 
+#assari-button {
+  background-color: #f57f30; }
+  #assari-button:hover {
+    background-color: #b35d24; }
+
 .sos__nav {
   width: 95vw;
   flex-wrap: wrap;
