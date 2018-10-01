@@ -58,6 +58,7 @@ logos[6]='<a href="https://www.lvsbrokers.com/fi/" target="_blank"><img src="img
 logos[7]='<a href="http://finitec.fi/" target="_blank"><img src="img/logos/finitec.svg" alt="Finitec" class="co-op__logo"></a>'
 logos[8]='<a href="https://www.futurice.com/" target="_blank"><img src="img/logos/futurice.svg" alt="Futurice" class="co-op__logo"></a>'
 logos[9]='<a href="https://digia.com/" target="_blank"><img src="img/logos/digia.svg" alt="Digia" class="co-op__logo digia"></a>'
+logos[10]='<a href="https://www.tek.fi/fi" target="_blank"><img src="img/logos/tek.svg" alt="TEK" class="co-op__logo"></a>'
 
 var logosshuffled = shuffle(logos).join("");
 
