@@ -59,7 +59,8 @@ logos[7]='<a href="http://finitec.fi/" target="_blank"><img src="img/logos/finit
 logos[8]='<a href="https://www.futurice.com/" target="_blank"><img src="img/logos/futurice.svg" alt="Futurice" class="co-op__logo"></a>'
 logos[9]='<a href="https://digia.com/" target="_blank"><img src="img/logos/digia.svg" alt="Digia" class="co-op__logo digia"></a>'
 logos[10]='<a href="https://www.tek.fi/fi" target="_blank"><img src="img/logos/tek.svg" alt="TEK" class="co-op__logo"></a>'
-logos[10]='<a href="http://www.bcbmedical.com/" target="_blank"><img src="img/logos/bcb.svg" alt="BCB Medical" class="co-op__logo"></a>'
+logos[11]='<a href="http://www.bcbmedical.com/" target="_blank"><img src="img/logos/bcb.svg" alt="BCB Medical" class="co-op__logo"></a>'
+logos[12]='<a href="http://www.taiste.fi/" target="_blank"><img src="img/logos/taiste.svg" alt="Taiste" class="co-op__logo"></a>'
 
 var logosshuffled = shuffle(logos).join("");
 
