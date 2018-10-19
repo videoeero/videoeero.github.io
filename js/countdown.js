@@ -12,7 +12,7 @@ var end = new Date('10/17/2018 12:15 PM');
         if (distance < 0) {
 
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'IT IS ON!';
+            document.getElementById('countdown').innerHTML = 'IT IS OVER!';
 
             return;
         }
