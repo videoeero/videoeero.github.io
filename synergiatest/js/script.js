@@ -1,1 +1,1 @@
-var numbers=document.querySelector(".number");function setProperty(e){red.style.setProperty("--animation-time",e+"s")}function changeAnimationTime(){setProperty(Math.floor(12*Math.random())+3)}setInterval(changeAnimationTime,1e3);
+let title=document.getElementById("landing-title");function loadParticles(){particlesJS.load("particles-js","particle-cfg.json")}title.innerHTML="Synergia",title.classList.add("opacity"),$(window).on("load",function(){setInterval(function(){"Synergia"===title.innerHTML?title.innerHTML="20.11.19":title.innerHTML="Synergia"},5e3)});
